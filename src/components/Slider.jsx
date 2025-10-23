@@ -12,7 +12,7 @@ const Slider = () => {
     fetch("/skills.json")
       .then((res) => res.json())
       .then((data) => setSkills(data))
-      .catch((err) => console.error("Error fetching skills:", err));
+      
   }, []);
 
   return (
@@ -32,7 +32,7 @@ const Slider = () => {
         {skills.map((skill) => (
           <SwiperSlide key={skill.skillId}>
             <div
-              className="relative h-[400px] md:h-[500px] bg-cover bg-center flex items-center justify-center text-center"
+              className="relative bg-cover h-[400px] md:h-[500px]  bg-center flex items-center justify-center text-center"
               style={{ backgroundImage: `url(${skill.image})` }}
             >
               <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>

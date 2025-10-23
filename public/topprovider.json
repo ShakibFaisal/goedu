@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Fahim Rahman",
+    "rating": 4.9,
+    "expertise": "Full-Stack Web Development",
+    "students": 320,
+    "image": "https://i.ibb.co/wF3jnt71/transparent-glasses-man-in-grey-hoodie-with-glasses6605742c05f420-64964225.webp"
+  },
+  {
+    "id": 2,
+    "name": "Anika Sultana",
+    "rating": 4.8,
+    "expertise": "UI/UX Design & Prototyping",
+    "students": 270,
+    "image": "https://i.ibb.co/sd5j87GW/360-F-1024115848-VTfu-Hj-Hj9-UVVvr-UOa-DQqm2cl-Mspg-Rn-Gs.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Rafi Hossain",
+    "rating": 4.7,
+    "expertise": "Data Science & Machine Learning",
+    "students": 190,
+    "image": "https://i.ibb.co/SDpVNFqN/pngtree-handsome-cartoon-man-surprising-look-on-his-face-png-image-14584830.png"
+  }
+]
