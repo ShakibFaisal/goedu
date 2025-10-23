@@ -5,6 +5,7 @@ import Profile from "../pages/Profile";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import SkillDetails from "../pages/SkillDetails";
+import PrivetRoute from "../PrivetRoute/PrivetRoute";
 
 
 
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
                 Component:Home
             },{
                 path:'/profile',
-                Component:Profile
+                element:<PrivetRoute><Profile></Profile></PrivetRoute>
+               
 
             },{
                 path:'/login',
@@ -32,7 +34,8 @@ const router = createBrowserRouter([
             },{
                 path:'/skilldetail/:id',
                 loader:()=>fetch('/skills.json'),
-                element:<SkillDetails></SkillDetails>
+                element:<PrivetRoute><SkillDetails></SkillDetails> </PrivetRoute>
+                
             }
         ]
     }

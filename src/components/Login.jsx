@@ -1,5 +1,5 @@
 import React, { use, useState } from "react";
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../Provider/AuthContext";
 import toast from "react-hot-toast";
@@ -7,6 +7,8 @@ import toast from "react-hot-toast";
 const Login = () => {
   const { signIn, googleLogin, forgetPass } = use(AuthContext);
   const [email, setemail] = useState(null);
+  const location=useLocation();
+  const navigate =useNavigate()
   const handleform = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -16,6 +18,7 @@ const Login = () => {
       .then(() => {
         toast.success("Login Successfully");
         e.target.reset()
+        navigate(location.state||'/')
       })
       .catch((error) => {
         toast.error(error.message);
