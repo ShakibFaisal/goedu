@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 const SkillCard = ({ skill }) => {
   return (
@@ -17,7 +18,9 @@ const SkillCard = ({ skill }) => {
            <h3>Price {skill.price}$</h3>
         </div>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary w-full">View Details</button>
+               
+           <Link to={`/skilldetail/${skill.skillId}`} className="btn btn-primary w-full">View Details</Link>
+        
         </div>
       </div>
     </div>

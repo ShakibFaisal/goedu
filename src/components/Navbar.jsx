@@ -4,11 +4,12 @@ import logo from "../assets/web-logo.png";
 import { AuthContext } from "../Provider/AuthContext";
 
 const Navbar = () => {
-  const { user,signout } = use(AuthContext);
-  const handlesignout=(e)=>{
+  const { user, signout } = use(AuthContext);
+ 
+  const handlesignout = (e) => {
     e.preventDefault();
-    signout()
-  }
+    signout();
+  };
   const navItems = (
     <>
       <NavLink className="m-3 cursor-pointer text-[16px] " to={"/"}>
@@ -52,20 +53,32 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
-      {user?  <div className="navbar-end gap-3">
-       
-        <button onClick={handlesignout} className="btn btn-primary text-white">
-          SignOut
-        </button>
-      </div> :<div className="navbar-end gap-3">
-        <Link to={"/login"} className="btn btn-secondary text-white">
-          Login
-        </Link>
-        <Link to={"/register"} className="btn btn-primary text-white">
-          Signup
-        </Link>
-      </div>}
-      
+      {user ? (
+        <div className="navbar-end gap-3">
+          <div className="w-10 h-10 rounded-full overflow-hidden">
+            <img
+              alt=""
+              src={user.photoURL}
+            />
+          </div>
+
+          <button
+            onClick={handlesignout}
+            className="btn btn-primary text-white"
+          >
+            SignOut
+          </button>
+        </div>
+      ) : (
+        <div className="navbar-end gap-3">
+          <Link to={"/login"} className="btn btn-secondary text-white">
+            Login
+          </Link>
+          <Link to={"/register"} className="btn btn-primary text-white">
+            Signup
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
