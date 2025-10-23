@@ -5,6 +5,7 @@ import SkillCard from '../components/SkillCard';
 import TopProvider from '../components/TopProvider';
 
 import HowItWork from '../components/HowItWork';
+import StudentReviews from '../components/StudentsReviews';
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             </div>
             <TopProvider></TopProvider>
             <HowItWork></HowItWork>
+            <StudentReviews></StudentReviews>
         </div>
     );
 };

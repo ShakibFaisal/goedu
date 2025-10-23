@@ -2,23 +2,24 @@ import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../Provider/AuthContext";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import toast from "react-hot-toast";
 
 const Login = () => {
-  const { signIn, googleLogin, forgetPass } = use(AuthContext);
-  const [email, setemail] = useState(null);
-  const location=useLocation();
-  const navigate =useNavigate()
+  const { signIn, googleLogin } = use(AuthContext);
+ 
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleform = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
-    setemail(email);
+    
     const password = e.target.pass.value;
     signIn(email, password)
       .then(() => {
         toast.success("Login Successfully");
-        e.target.reset()
-        navigate(location.state||'/')
+        e.target.reset();
+        navigate(location.state || "/");
       })
       .catch((error) => {
         toast.error(error.message);
@@ -28,14 +29,16 @@ const Login = () => {
     googleLogin()
       .then(() => {
         toast.success("Login Successfully");
+        navigate(location.state || "/");
       })
       .catch((error) => {
         toast.error(error.message);
       });
   };
-  const handleforget = () => {
-    forgetPass(email);
-  };
+ 
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePassword = () => setShowPassword(!showPassword);
   return (
     <div>
       <form
@@ -52,21 +55,34 @@ const Login = () => {
             name="email"
             placeholder="Email"
           />
+          <div className="relative w-full max-w-md mx-auto ">
+            <label className="label">Password</label>
+            <input
+              type={showPassword ? "text" : "password"}
+              className="input"
+              name="pass"
+              placeholder="Password"
+            />
+            <button
+              type="button"
+              onClick={togglePassword}
+              className="absolute right-3 top-2/3  transform -translate-y-1/2 text-gray-500"
+            >
+              {showPassword ? (
+                <AiOutlineEyeInvisible size={20} />
+              ) : (
+                <AiOutlineEye size={20} />
+              )}
+            </button>{" "}
+          </div>
 
-          <label className="label">Password</label>
-          <input
-            type="password"
-            className="input"
-            name="pass"
-            placeholder="Password"
-          />
           <div>
-            <a
-              onClick={handleforget}
+            <Link
               className="mt-2.5 hover:underline cursor-pointer"
+              to={"/reset"}
             >
               Forget password ?
-            </a>
+            </Link>
           </div>
           <button className="btn btn-neutral mt-4">Login</button>
           <p>

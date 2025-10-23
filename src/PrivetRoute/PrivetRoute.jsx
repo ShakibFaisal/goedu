@@ -1,12 +1,13 @@
 import React, { use } from 'react';
 import { AuthContext } from '../Provider/AuthContext';
 import { Navigate, useLocation } from 'react-router';
+import Loader from '../components/Loader';
 
 const PrivetRoute = ({children}) => {
     const {user,loading}=use(AuthContext)
     const location =useLocation()
     if (loading) {
-        return <span className="loading loading-spinner loading-xs"></span>
+        return <Loader></Loader>
         
     }
     if (user) {

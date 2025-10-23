@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Ayesha Khan",
+    "photo": "https://i.ibb.co/sd5j87GW/360-F-1024115848-VTfu-Hj-Hj9-UVVvr-UOa-DQqm2cl-Mspg-Rn-Gs.jpg",
+    "course": "Full Stack Web Development",
+    "review": "This platform helped me land my first job as a web developer! The instructors are amazing, and the learning path is super clear.",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Tanvir Ahmed",
+    "photo": "https://i.ibb.co/wF3jnt71/transparent-glasses-man-in-grey-hoodie-with-glasses6605742c05f420-64964225.webp",
+    "course": "UI/UX Design Masterclass",
+    "review": "The design lessons were very practical and easy to follow. I’ve built my portfolio using what I learned here!",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "name": "Mira Hasan",
+    "photo": "https://i.ibb.co/sd5j87GW/360-F-1024115848-VTfu-Hj-Hj9-UVVvr-UOa-DQqm2cl-Mspg-Rn-Gs.jpg",
+    "course": "Machine Learning with Python",
+    "review": "The instructor explained complex topics in a very beginner-friendly way. Loved the hands-on projects!",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Rafiul Islam",
+    "photo": "https://i.ibb.co/SDpVNFqN/pngtree-handsome-cartoon-man-surprising-look-on-his-face-png-image-14584830.png",
+    "course": "Data Science for Beginners",
+    "review": "Great introduction to data analysis and visualization. Highly recommend for anyone starting out in data science.",
+    "rating": 4
+  },
+  {
+    "id": 5,
+    "name": "Nadia Sultana",
+    "photo": "https://i.ibb.co/SDpVNFqN/pngtree-handsome-cartoon-man-surprising-look-on-his-face-png-image-14584830.png",
+    "course": "Digital Marketing Essentials",
+    "review": "The digital marketing tips and case studies were very useful. I’ve already applied them in my small business!",
+    "rating": 5
+  }
+]

@@ -55,10 +55,12 @@ const Navbar = () => {
       </div>
       {user ? (
         <div className="navbar-end gap-3">
-          <div className="w-10 h-10 rounded-full overflow-hidden">
+          <div className="tooltip tooltip-bottom"
+            data-tip={user.displayName}>
             <img
               alt=""
               src={user.photoURL}
+              className=" w-10 h-10 rounded-full object-cover border-2 border-primary"
             />
           </div>
 

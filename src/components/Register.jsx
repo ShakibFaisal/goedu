@@ -3,10 +3,11 @@ import { Link, useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../Provider/AuthContext";
 import toast from "react-hot-toast";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Register = () => {
   const [error, seterror] = useState("");
-  const { createUserEP ,googleLogin,updateUser} = use(AuthContext);
+  const { createUserEP, googleLogin, updateUser } = use(AuthContext);
   const navigate = useNavigate();
   const handleform = (e) => {
     e.preventDefault();
@@ -30,24 +31,27 @@ const Register = () => {
     createUserEP(email, password)
       .then(() => {
         toast.success("Registered successfully");
-        navigate('/')
-        updateUser(name,photo)
+        navigate("/");
+        updateUser(name, photo);
       })
       .catch((error) => {
         toast.error(error.message);
       });
   };
-  const handlebtn=(e)=>{
+  const handlebtn = (e) => {
     e.preventDefault();
     googleLogin()
-    .then(()=>{
-      navigate('/')
-    })
-    .catch((error)=>{
-      toast(error.message)
-    })
-
-  }
+      .then(() => {
+        navigate("/");
+      })
+      .catch((error) => {
+        toast(error.message);
+      });
+  };
+  
+    const [showPassword, setShowPassword] = useState(false);
+  
+    const togglePassword = () => setShowPassword(!showPassword);
 
   return (
     <div className="my-[100px]">
@@ -82,13 +86,26 @@ const Register = () => {
             placeholder="Email"
           />
 
-          <label className="label">Password</label>
-          <input
-            type="password"
-            className="input"
-            name="pass"
-            placeholder="Password"
-          />
+          <div className="relative w-full max-w-md mx-auto ">
+            <label className="label">Password</label>
+            <input
+              type={showPassword ? "text" : "password"}
+              className="input"
+              name="pass"
+              placeholder="Password"
+            />
+            <button
+              type="button"
+              onClick={togglePassword}
+              className="absolute right-3 top-2/3  transform -translate-y-1/2 text-gray-500"
+            >
+              {showPassword ? (
+                <AiOutlineEyeInvisible size={20} />
+              ) : (
+                <AiOutlineEye size={20} />
+              )}
+            </button>{" "}
+          </div>
           <button className="btn btn-neutral mt-4">Register</button>
 
           <p className="text-red-600">{error}</p>
