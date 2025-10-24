@@ -1,7 +1,7 @@
 GoEdu – Online Learning Platform
 🌐 Live Demo
 
-[Add your live website URL here]
+(https://goedu-61dbb.web.app/)
 
 📌 Project Overview
 
