@@ -1,3 +1,4 @@
+
 [
   {
     "skillId": 1,
@@ -7,9 +8,33 @@
     "price": 45,
     "rating": 4.9,
     "slotsAvailable": 3,
-    "description": "Learn how to build dynamic websites using HTML, CSS, JavaScript, React, and Node.js. This bootcamp is designed for beginners and intermediate learners who want to master both frontend and backend development. You'll create real-world projects and deploy them online. By the end, you’ll understand how full-stack web apps work from top to bottom.",
+    "description": "Learn how to build dynamic websites using HTML, CSS, JavaScript, React, and Node.js.",
     "image": "https://i.ibb.co/LTn3j0Z/web.png",
-    "category": "Programming"
+    "category": "Programming",
+    "totalClasses": 24,
+    "totalProjects": 6,
+    "liveClassTimePerWeek": "10:00 PM – 11:30 PM (Sun, Tue, Thu)",
+    "whatYouWillLearn": [
+      "HTML, CSS, JavaScript",
+      "React.js frontend development",
+      "Node.js + Express backend",
+      "MongoDB database",
+      "Deploy full-stack apps"
+    ],
+    "classDetails": [
+      "Week 1: HTML Basics, Elements, Forms",
+      "Week 2: CSS Layouts, Flexbox, Grid",
+      "Week 3: JavaScript Basics & DOM",
+      "Week 4: ES6, Fetch API, Async JS",
+      "Week 5: React Intro, Components",
+      "Week 6: React Hooks, State, Props",
+      "Week 7: React Router, Context API",
+      "Week 8: React Project Build",
+      "Week 9: Node.js Basics",
+      "Week 10: Express.js REST API",
+      "Week 11: MongoDB + Mongoose CRUD",
+      "Week 12: Full-Stack Final Project"
+    ]
   },
   {
     "skillId": 2,
@@ -19,9 +44,25 @@
     "price": 25,
     "rating": 4.8,
     "slotsAvailable": 5,
-    "description": "This course covers Python from scratch — syntax, loops, functions, and modules. You’ll learn through hands-on coding challenges and mini projects to reinforce your understanding. Perfect for absolute beginners who want to build a strong foundation in Python. By the end, you'll be confident writing clean and efficient scripts.",
+    "description": "This course covers Python from scratch — syntax, loops, functions, and modules.",
     "image": "https://i.ibb.co/5XC91g9n/python.webp",
-    "category": "Programming"
+    "category": "Programming",
+    "totalClasses": 16,
+    "totalProjects": 4,
+    "liveClassTimePerWeek": "10:00 PM – 11:30 PM (Sun, Tue)",
+    "whatYouWillLearn": [
+      "Python basics",
+      "Loops & conditions",
+      "Functions & modules",
+      "File handling",
+      "Mini automation scripts"
+    ],
+    "classDetails": [
+      "Week 1: Variables, Datatypes, Inputs",
+      "Week 2: Conditions, Loops, Operators",
+      "Week 3: Functions, Modules, Packages",
+      "Week 4: File Handling + Final Mini Project"
+    ]
   },
   {
     "skillId": 3,
@@ -31,9 +72,25 @@
     "price": 30,
     "rating": 4.7,
     "slotsAvailable": 4,
-    "description": "Master React hooks, context API, and component optimization with this in-depth course. You’ll learn to manage state effectively and build scalable user interfaces. We’ll cover custom hooks, performance tuning, and routing using React Router. Ideal for those who already know basic React and want to level up their skills.",
+    "description": "Master React hooks, context API, routing, and performance optimization.",
     "image": "https://i.ibb.co/DfZ8XNh8/react-js.jpg",
-    "category": "Web Development"
+    "category": "Web Development",
+    "totalClasses": 20,
+    "totalProjects": 4,
+    "liveClassTimePerWeek": "10:00 PM – 11:30 PM (Mon, Wed, Fri)",
+    "whatYouWillLearn": [
+      "Advanced hooks",
+      "Context API",
+      "React Router",
+      "Performance optimization",
+      "Custom hooks"
+    ],
+    "classDetails": [
+      "Week 1: useState & useEffect Deep Dive",
+      "Week 2: useReducer, useMemo, useCallback",
+      "Week 3: Context API + Global State",
+      "Week 4: Routing + Performance Optimization"
+    ]
   },
   {
     "skillId": 4,
@@ -43,9 +100,25 @@
     "price": 35,
     "rating": 4.8,
     "slotsAvailable": 3,
-    "description": "This hands-on Node.js course teaches you how to design, build, and secure RESTful APIs using Express and MongoDB. You’ll implement authentication, data validation, and error handling. Each lesson includes practical examples you can reuse in your projects. By completion, you’ll be ready to build production-level backends confidently.",
+    "description": "Learn to build secure RESTful APIs using Express and MongoDB.",
     "image": "https://i.ibb.co/DyPPp2F/node-js.jpg",
-    "category": "Backend Development"
+    "category": "Backend Development",
+    "totalClasses": 18,
+    "totalProjects": 3,
+    "liveClassTimePerWeek": "09:00 PM – 11:00 PM (Tue, Thu)",
+    "whatYouWillLearn": [
+      "REST API design",
+      "Express routing",
+      "MongoDB CRUD operations",
+      "JWT authentication",
+      "Error handling & middleware"
+    ],
+    "classDetails": [
+      "Week 1: Node.js, NPM & Express Setup",
+      "Week 2: Routing, Middleware, Controllers",
+      "Week 3: MongoDB Integration + CRUD",
+      "Week 4: Authentication (JWT) + Final Project"
+    ]
   },
   {
     "skillId": 5,
@@ -55,9 +128,27 @@
     "price": 40,
     "rating": 4.9,
     "slotsAvailable": 2,
-    "description": "Create stunning cross-platform mobile apps using Flutter and Dart. This course walks you through UI design, navigation, state management, and Firebase integration. You’ll learn how to publish your apps on both Android and iOS. Ideal for developers who want to build mobile apps with a single codebase efficiently.",
+    "description": "Learn to build mobile apps with Flutter, Dart, Firebase and publish on stores.",
     "image": "https://i.ibb.co/tMdFg5RH/Flutter-Development.jpg",
-    "category": "Mobile Development"
+    "category": "Mobile Development",
+    "totalClasses": 22,
+    "totalProjects": 5,
+    "liveClassTimePerWeek": "08:00 PM – 10:00 PM (Mon, Thu, Sat)",
+    "whatYouWillLearn": [
+      "Dart language",
+      "Flutter widgets",
+      "State management",
+      "Firebase integration",
+      "App publishing"
+    ],
+    "classDetails": [
+      "Week 1: Dart Basics & OOP",
+      "Week 2: Flutter Layouts & Widgets",
+      "Week 3: Routing & State Management",
+      "Week 4: Firebase Auth & Firestore",
+      "Week 5: Building a Full Mobile App",
+      "Week 6: Publish on Play Store + Final Project"
+    ]
   },
   {
     "skillId": 6,
@@ -67,9 +158,27 @@
     "price": 50,
     "rating": 4.9,
     "slotsAvailable": 3,
-    "description": "Dive into data science with NumPy, Pandas, and Scikit-learn. You’ll learn how to analyze data, visualize patterns, and build predictive models. The course includes real-world case studies such as spam detection and house price prediction. Great for learners who want to apply Python in data-driven problem solving.",
+    "description": "Analyze data and build ML models using Pandas, NumPy, and Scikit-learn.",
     "image": "https://i.ibb.co/20Q9pK7q/ml.jpg",
-    "category": "Machine Learning"
+    "category": "Machine Learning",
+    "totalClasses": 26,
+    "totalProjects": 6,
+    "liveClassTimePerWeek": "07:00 PM – 10:00 PM (Fri, Sat)",
+    "whatYouWillLearn": [
+      "Data analysis",
+      "Visualization",
+      "ML algorithms",
+      "Model evaluation",
+      "Real-world ML projects"
+    ],
+    "classDetails": [
+      "Week 1: Python for Data Science",
+      "Week 2: NumPy & Pandas",
+      "Week 3: Data Cleaning & Visualization",
+      "Week 4: ML Algorithms (Regression, Classification)",
+      "Week 5: Model Evaluation & Tuning",
+      "Week 6: Case Studies + Final ML Project"
+    ]
   },
   {
     "skillId": 7,
@@ -79,9 +188,24 @@
     "price": 15,
     "rating": 4.6,
     "slotsAvailable": 6,
-    "description": "Understand how to use Git effectively for version control and collaboration. You’ll learn branching, merging, resolving conflicts, and contributing to open-source projects. This course is project-based, ensuring you practice every concept. It’s essential for every developer who wants to work efficiently in team environments.",
+    "description": "Learn Git workflows, version control, branching, merging, and open-source contribution.",
     "image": "https://i.ibb.co/27g3Qv1b/git.png",
-    "category": "Version Control"
+    "category": "Version Control",
+    "totalClasses": 10,
+    "totalProjects": 2,
+    "liveClassTimePerWeek": "09:00 PM – 10:30 PM (Sun, Wed)",
+    "whatYouWillLearn": [
+      "Git basics",
+      "Branching & merging",
+      "Pull requests",
+      "Git conflicts",
+      "Team collaboration"
+    ],
+    "classDetails": [
+      "Week 1: Git Basics & Local Repo Setup",
+      "Week 2: Branching, Merging, Conflicts",
+      "Week 3: GitHub Workflow + Open-Source Project"
+    ]
   },
   {
     "skillId": 8,
@@ -91,9 +215,24 @@
     "price": 20,
     "rating": 4.7,
     "slotsAvailable": 5,
-    "description": "Learn how to design, query, and manage relational databases using MySQL. Topics include SQL queries, joins, indexing, and normalization. You’ll build real-world data models and connect them to applications. By the end, you’ll be able to design efficient databases and write powerful SQL statements confidently.",
+    "description": "Learn SQL queries, joins, indexing, and database design.",
     "image": "https://i.ibb.co/GQ1gjBht/sql.png",
-    "category": "Database"
+    "category": "Database",
+    "totalClasses": 14,
+    "totalProjects": 3,
+    "liveClassTimePerWeek": "08:00 PM – 10:00 PM (Tue, Fri)",
+    "whatYouWillLearn": [
+      "SQL basics",
+      "Joins & subqueries",
+      "Database schema design",
+      "Normalization",
+      "Query optimization"
+    ],
+    "classDetails": [
+      "Week 1: SQL Basics & CRUD",
+      "Week 2: Joins, Subqueries, Aggregate Functions",
+      "Week 3: Database Design + Optimization Project"
+    ]
   },
   {
     "skillId": 9,
@@ -103,9 +242,24 @@
     "price": 45,
     "rating": 4.8,
     "slotsAvailable": 2,
-    "description": "Get hands-on experience with Docker containers, continuous integration, and deployment pipelines. Learn how to automate your workflows with GitHub Actions and Docker Hub. This course focuses on modern DevOps practices to improve productivity and collaboration. Perfect for developers aiming for efficient deployment systems.",
+    "description": "Learn Docker, CI/CD pipelines, GitHub Actions, and automation.",
     "image": "https://i.ibb.co/35J9xrV0/1000-F-505416517-O3-GFNtbjfy-Au-Vwx-Ywov-IFa-GHMHg-RS1kg.jpg",
-    "category": "DevOps"
+    "category": "DevOps",
+    "totalClasses": 18,
+    "totalProjects": 4,
+    "liveClassTimePerWeek": "09:30 PM – 11:30 PM (Mon, Thu)",
+    "whatYouWillLearn": [
+      "Docker containers",
+      "CI/CD pipelines",
+      "GitHub Actions",
+      "Docker Hub & images",
+      "Automation scripting"
+    ],
+    "classDetails": [
+      "Week 1: Docker Basics & Containers",
+      "Week 2: CI/CD Pipeline Setup",
+      "Week 3: GitHub Actions + Final DevOps Project"
+    ]
   },
   {
     "skillId": 10,
@@ -115,8 +269,24 @@
     "price": 30,
     "rating": 4.9,
     "slotsAvailable": 4,
-    "description": "Sharpen your problem-solving skills by mastering core data structures like arrays, linked lists, stacks, and trees. Each module includes algorithm challenges with detailed explanations. You’ll also learn how to optimize your code for speed and memory. Ideal for students preparing for coding interviews or competitive programming.",
+    "description": "Master data structures and algorithms through coding practice.",
     "image": "https://i.ibb.co/7dK3CybB/c.webp",
-    "category": "Programming"
+    "category": "Programming",
+    "totalClasses": 20,
+    "totalProjects": 5,
+    "liveClassTimePerWeek": "08:30 PM – 11:30 PM (Tue, Thu)",
+    "whatYouWillLearn": [
+      "Basic DSA",
+      "Trees & graphs",
+      "Sorting & searching",
+      "Recursion & DP",
+      "Problem solving patterns"
+    ],
+    "classDetails": [
+      "Week 1: Arrays, Linked Lists, Stack, Queue",
+      "Week 2: Trees, BST, Graph Basics",
+      "Week 3: Algorithms — Sorting, Searching",
+      "Week 4: Recursion, DP + Final Coding Project"
+    ]
   }
 ]

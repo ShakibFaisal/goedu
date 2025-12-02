@@ -1,0 +1,122 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Full-Stack Web Development Bootcamp",
+    "providerName": "Fahim Rahman",
+    "providerEmail": "fahim@skillswap.com",
+    "price": 45,
+    "rating": 4.9,
+    "slotsAvailable": 3,
+    "description": "Learn how to build dynamic websites using HTML, CSS, JavaScript, React, and Node.js. This bootcamp is designed for beginners and intermediate learners who want to master both frontend and backend development. You'll create real-world projects and deploy them online. By the end, you’ll understand how full-stack web apps work from top to bottom.",
+    "image": "https://i.ibb.co/LTn3j0Z/web.png",
+    "category": "Programming"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Python Programming for Beginners",
+    "providerName": "Shakila Yasmin",
+    "providerEmail": "shakila@skillswap.com",
+    "price": 25,
+    "rating": 4.8,
+    "slotsAvailable": 5,
+    "description": "This course covers Python from scratch — syntax, loops, functions, and modules. You’ll learn through hands-on coding challenges and mini projects to reinforce your understanding. Perfect for absolute beginners who want to build a strong foundation in Python. By the end, you'll be confident writing clean and efficient scripts.",
+    "image": "https://i.ibb.co/5XC91g9n/python.webp",
+    "category": "Programming"
+  },
+  {
+    "skillId": 3,
+    "skillName": "React.js Advanced Concepts and Hooks",
+    "providerName": "Ahsan Karim",
+    "providerEmail": "ahsan@skillswap.com",
+    "price": 30,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Master React hooks, context API, and component optimization with this in-depth course. You’ll learn to manage state effectively and build scalable user interfaces. We’ll cover custom hooks, performance tuning, and routing using React Router. Ideal for those who already know basic React and want to level up their skills.",
+    "image": "https://i.ibb.co/DfZ8XNh8/react-js.jpg",
+    "category": "Web Development"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Node.js and Express REST API Development",
+    "providerName": "Rafi Uddin",
+    "providerEmail": "rafi@skillswap.com",
+    "price": 35,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "This hands-on Node.js course teaches you how to design, build, and secure RESTful APIs using Express and MongoDB. You’ll implement authentication, data validation, and error handling. Each lesson includes practical examples you can reuse in your projects. By completion, you’ll be ready to build production-level backends confidently.",
+    "image": "https://i.ibb.co/DyPPp2F/node-js.jpg",
+    "category": "Backend Development"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Mobile App Development with Flutter",
+    "providerName": "Sadia Akhter",
+    "providerEmail": "sadia@skillswap.com",
+    "price": 40,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Create stunning cross-platform mobile apps using Flutter and Dart. This course walks you through UI design, navigation, state management, and Firebase integration. You’ll learn how to publish your apps on both Android and iOS. Ideal for developers who want to build mobile apps with a single codebase efficiently.",
+    "image": "https://i.ibb.co/tMdFg5RH/Flutter-Development.jpg",
+    "category": "Mobile Development"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Data Science and Machine Learning with Python",
+    "providerName": "Mehedi Hasan",
+    "providerEmail": "mehedi@skillswap.com",
+    "price": 50,
+    "rating": 4.9,
+    "slotsAvailable": 3,
+    "description": "Dive into data science with NumPy, Pandas, and Scikit-learn. You’ll learn how to analyze data, visualize patterns, and build predictive models. The course includes real-world case studies such as spam detection and house price prediction. Great for learners who want to apply Python in data-driven problem solving.",
+    "image": "https://i.ibb.co/20Q9pK7q/ml.jpg",
+    "category": "Machine Learning"
+  },
+  {
+    "skillId": 7,
+    "skillName": "Git and GitHub for Developers",
+    "providerName": "Tania Haque",
+    "providerEmail": "tania@skillswap.com",
+    "price": 15,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Understand how to use Git effectively for version control and collaboration. You’ll learn branching, merging, resolving conflicts, and contributing to open-source projects. This course is project-based, ensuring you practice every concept. It’s essential for every developer who wants to work efficiently in team environments.",
+    "image": "https://i.ibb.co/27g3Qv1b/git.png",
+    "category": "Version Control"
+  },
+  {
+    "skillId": 8,
+    "skillName": "Database Management with MySQL",
+    "providerName": "Nazmul Hasan",
+    "providerEmail": "nazmul@skillswap.com",
+    "price": 20,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Learn how to design, query, and manage relational databases using MySQL. Topics include SQL queries, joins, indexing, and normalization. You’ll build real-world data models and connect them to applications. By the end, you’ll be able to design efficient databases and write powerful SQL statements confidently.",
+    "image": "https://i.ibb.co/GQ1gjBht/sql.png",
+    "category": "Database"
+  },
+  {
+    "skillId": 9,
+    "skillName": "DevOps Fundamentals with Docker & CI/CD",
+    "providerName": "Shahriar Kabir",
+    "providerEmail": "shahriar@skillswap.com",
+    "price": 45,
+    "rating": 4.8,
+    "slotsAvailable": 2,
+    "description": "Get hands-on experience with Docker containers, continuous integration, and deployment pipelines. Learn how to automate your workflows with GitHub Actions and Docker Hub. This course focuses on modern DevOps practices to improve productivity and collaboration. Perfect for developers aiming for efficient deployment systems.",
+    "image": "https://i.ibb.co/35J9xrV0/1000-F-505416517-O3-GFNtbjfy-Au-Vwx-Ywov-IFa-GHMHg-RS1kg.jpg",
+    "category": "DevOps"
+  },
+  {
+    "skillId": 10,
+    "skillName": "Problem Solving and Data Structures in C++",
+    "providerName": "Rakibul Islam",
+    "providerEmail": "rakibul@skillswap.com",
+    "price": 30,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Sharpen your problem-solving skills by mastering core data structures like arrays, linked lists, stacks, and trees. Each module includes algorithm challenges with detailed explanations. You’ll also learn how to optimize your code for speed and memory. Ideal for students preparing for coding interviews or competitive programming.",
+    "image": "https://i.ibb.co/7dK3CybB/c.webp",
+    "category": "Programming"
+  }
+]

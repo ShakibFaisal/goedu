@@ -8,7 +8,7 @@ import Loader from "../components/Loader";
 const Root = () => {
   return (
     <div className="">
-      <header>
+      <header className="sticky top-0 z-50">
         <Navbar></Navbar>
       </header>
       <main>

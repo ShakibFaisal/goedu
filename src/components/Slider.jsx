@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Link } from "react-router";
 
 const Slider = () => {
   const [skills, setSkills] = useState([]);
@@ -11,14 +13,13 @@ const Slider = () => {
   useEffect(() => {
     fetch("/skills.json")
       .then((res) => res.json())
-      .then((data) => setSkills(data))
-      
+      .then((data) => setSkills(data));
   }, []);
 
   return (
-    <div className=" w-full max-w-[1200px]  mx-auto mt-8 rounded-2xl overflow-hidden shadow-lg">
+    <div className="w-full bg-[#F5F9FF] max-h-[70vh] rounded-2xl py-10 mt-8 shadow-xl">
       <Swiper
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         slidesPerView={1}
         loop={true}
         autoplay={{
@@ -31,19 +32,27 @@ const Slider = () => {
       >
         {skills.map((skill) => (
           <SwiperSlide key={skill.skillId}>
-            <div
-              className="relative bg-cover h-[400px] md:h-[500px]  bg-center flex items-center justify-center text-center"
-              style={{ backgroundImage: `url(${skill.image})` }}
-            >
-              <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
-              <div className="relative z-10 text-white px-5">
-                <h2 className="text-3xl md:text-5xl  font-bold mb-4">
+            <div className="max-w-[1350px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <div>
+                <h1 className="text-5xl font-bold leading-snug mb-4">
                   {skill.skillName}
-                </h2>
-               
-                <button className="btn btn-secondary mt-5 text-white border-white hover:bg-[#FF4081] hover:border-[#FF4081]">
-                  Explore Now
-                </button>
+                </h1>
+
+                <p className="text-lg mb-6">
+                  Transform your future by learning in-demand skills.
+                </p>
+
+                <Link to={`/skilldetail/${skill.skillId}`} className="bg-[#FFC727] hover:bg-[#ffb800] px-8 py-4 rounded-xl text-lg font-semibold">
+                  Learn Now →
+                </Link>
+              </div>
+              {/* Right image part */}
+              <div className="flex justify-center">
+                <img
+                  className="rounded-2xl max-h-[70vh] shadow-lg"
+                  src={skill.image}
+                  alt="slider-img"
+                />
               </div>
             </div>
           </SwiperSlide>

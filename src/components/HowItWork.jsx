@@ -34,12 +34,13 @@ const HowItWork = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-900 mb-[100px]" >
+    <section className="py-16" style={{ background: "#FAF0F0" }}>
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">
+        <h2 className="text-3xl font-bold mb-4 text-gray-900">
           How GoEdu Works
         </h2>
-        <p className="text-accent mb-10 max-w-2xl mx-auto">
+
+        <p className="text-gray-600 mb-10 max-w-2xl mx-auto">
           Learn and share skills with people around you in just a few simple steps.
         </p>
 
@@ -47,15 +48,18 @@ const HowItWork = () => {
           {steps.map((step) => (
             <div
               key={step.id}
-              className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 "
+              className="
+                rounded-2xl p-6 shadow-lg
+                backdrop-blur-md bg-white/40
+                border border-white/30 
+                transition hover:bg-white/50 hover:shadow-xl
+              "
             >
               <div className="flex justify-center mb-4">{step.icon}</div>
-              <h3 className="text-lg font-semibold text-white mb-2">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {step.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                {step.description}
-              </p>
+              <p className="text-gray-700 text-sm">{step.description}</p>
             </div>
           ))}
         </div>
