@@ -42,7 +42,7 @@ const router = createBrowserRouter([
                 path:'/skilldetail/:id',
                 loader:()=>fetch('/skills.json'),
                 hydrateFallbackElement:<Loader></Loader>,
-                element:<PrivetRoute><SkillDetails></SkillDetails> </PrivetRoute>
+                element:<SkillDetails></SkillDetails> 
                 
             },{
                 path:'/reset',
