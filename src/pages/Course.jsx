@@ -6,9 +6,20 @@ import { FaSearch } from "react-icons/fa";
 const Course = () => {
   const data = useLoaderData();
   const [search, setSearch] = useState("");
+  const [sortOrder, setSortOrder] = useState("");
   const filterdata = data.filter((skill) => {
     const query = search.toLowerCase();
     return skill.skillName?.toLowerCase().includes(query);
+  });
+    // Sort based on price
+  const sortedData = [...filterdata].sort((a, b) => {
+    if (sortOrder === "asc") {
+      return a.price - b.price;
+    } else if (sortOrder === "desc") {
+      return b.price - a.price;
+    } else {
+      return 0; 
+    }
   });
   return (
     <div className="max-w-11/12 mx-auto my-12 md:my-[100px]">
@@ -32,8 +43,20 @@ const Course = () => {
           </span>
         </div>
       </div>
+       {/* Sort Dropdown */}
+      <div className="flex justify-center mb-6">
+        <select
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.value)}
+          className="w-[90%] md:w-1/4 p-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-[#e94fe6]"
+        >
+          <option value="">Sort by Price</option>
+          <option value="asc">Price: Low to High</option>
+          <option value="desc">Price: High to Low</option>
+        </select>
+      </div>
       <div className="mx-auto grid grid-cols-1 gap-5 md:grid-cols-4">
-        {filterdata.map((skill, index) => (
+        {sortedData.map((skill, index) => (
           <SkillCard key={index} skill={skill}></SkillCard>
         ))}
       </div>
