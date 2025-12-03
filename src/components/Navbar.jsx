@@ -1,5 +1,9 @@
 import React, { use } from "react";
 import { Link, NavLink } from "react-router";
+import { FaHome } from "react-icons/fa";
+import { FaBook } from "react-icons/fa";
+import { IoIosContact } from "react-icons/io";
+import { MdContactMail } from "react-icons/md";
 
 import { AuthContext } from "../Provider/AuthContext";
 import Logo from "./logo";
@@ -13,16 +17,28 @@ const Navbar = () => {
   };
   const navItems = (
     <>
-      <NavLink className="m-3 cursor-pointer text-2xl font-bold " to={"/"}>
-        Home
+      <NavLink className="m-3  cursor-pointer flex items-center gap-1.5 text-[20px] font-bold " to={"/"}>
+       <FaHome /> Home
       </NavLink>
-      <NavLink className="m-3 cursor-pointer text-2xl font-bold" to={"/profile"}>
-        My Profile
+      
+       <NavLink className="m-3  cursor-pointer flex items-center gap-1.5  text-[20px]  font-bold" to={"/courses"}>
+        <FaBook /> Course
       </NavLink>
+       <NavLink className="m-3  cursor-pointer flex items-center gap-1.5 text-[20px]  font-bold" to={"/about-us"}>
+        <FaBook /> About Us
+      </NavLink>
+      <NavLink className="m-3  cursor-pointer flex items-center gap-1.5  text-[20px]  font-bold" to={"/contact"}>
+        <MdContactMail /> Contact
+      </NavLink>
+      {user&& <NavLink className="m-3  cursor-pointer flex items-center gap-1.5 text-[20px]  font-bold" to={"/profile"}>
+       <IoIosContact /> My Profile
+      </NavLink>}
+      
+      
     </>
   );
   return (
-    <div className="navbar bg-base-100 max-h-[80px] shadow-sm p-3 md:px-7 ">
+    <div className="navbar bg-base-100 max-h-[90px] shadow-sm p-3 md:px-7 ">
       <div className="navbar max-w-11/12 mx-auto">
         {" "}
         <div className=" navbar-start">
@@ -77,11 +93,11 @@ const Navbar = () => {
             </button>
           </div>
         ) : (
-          <div className="navbar-end gap-3">
-            <Link to={"/login"} className="btn btn-secondary text-white">
+          <div className="navbar-end gap-0.5 md:gap-3">
+            <Link to={"/login"} className="btn md:text-[20px] p-2 md:px-8 md:py-6  bg-gradient-to-r from-primary to-[#283cce]  text-white">
               Login
             </Link>
-            <Link to={"/register"} className="btn btn-primary text-white">
+            <Link to={"/register"} className="btn   md:text-[20px] p-2 md:px-8 md:py-6 bg-gradient-to-r from-primary to-[#283cce]   text-white">
               Signup
             </Link>
           </div>

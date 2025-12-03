@@ -19,6 +19,7 @@
   font-family: "Inter", sans-serif;
 }
 .active {
-  text-decoration: underline;
-  color: rgb(224, 58, 213);
+  /* text-decoration: underline;
+  color: rgb(224, 58, 213); */
+  @apply bg-gradient-to-r px-5 py-3 rounded-2xl from-primary to-[#283cce] text-white  ;
 }

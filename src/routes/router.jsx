@@ -9,6 +9,9 @@ import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import Error from "../Error/Error";
 import Loader from "../components/Loader";
 import Reset from "../pages/Reset";
+import Course from "../pages/Course";
+import AboutUs from "../pages/AboutUs";
+import ContactUs from "../pages/ContactUs";
 
 
 
@@ -47,6 +50,17 @@ const router = createBrowserRouter([
             },{
                 path:'/reset',
                 Component:Reset
+            },{
+                path:'/courses',
+                 loader:()=>fetch('/skills.json'),
+                hydrateFallbackElement:<Loader></Loader>,
+                Component:Course,
+            },{
+                path:"/about-us",
+                Component:AboutUs
+            },{
+                path:"/contact",
+                Component:ContactUs
             }
         ]
     }
