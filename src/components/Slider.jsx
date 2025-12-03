@@ -23,7 +23,7 @@ const Slider = () => {
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 3000,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
@@ -32,7 +32,7 @@ const Slider = () => {
       >
         {skills.map((skill) => (
           <SwiperSlide key={skill.skillId}>
-            <div className="max-w-[1350px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="max-w-[1350px] max-h-[70vh] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div>
                 <h1 className="text-2xl md:text-5xl font-bold leading-snug mb-4">
                   {skill.skillName}
@@ -49,7 +49,7 @@ const Slider = () => {
               {/* Right image part */}
               <div className="flex justify-center">
                 <img
-                  className="rounded-2xl max-h-[70vh] shadow-lg"
+                  className="rounded-2xl h-[350px] object-contain shadow-lg"
                   src={skill.image}
                   alt="slider-img"
                 />
