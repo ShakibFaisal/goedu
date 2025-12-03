@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const SkillCard = ({ skill }) => {
   return (
-    <div className="card bg-base-100 w-[300px]  h-full min-h-[450px] shadow-sm">
+    <div className="card bg-base-100 w-[300px] transition-transform duration-300 hover:scale-105   h-full min-h-[450px] shadow-sm">
       <figure className="h-[200px]">
         
         <img  className="w-full h-full object-cover" 
