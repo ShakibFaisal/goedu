@@ -69,7 +69,7 @@ const SkillDetails = () => {
             </p> */}
           </div>
           <div className="my-3.5 grid grid-cols-2 md:grid-cols-3 items-center">
-            <div className="p-1.5 bg-[#FAF0F0] border border-gray-300 shadow-sm max-w-[180px] rounded-[10px] ">
+            <div className="p-1.5 m-2 bg-[#FAF0F0] border border-gray-300 shadow-sm max-w-[180px] rounded-[10px] ">
               <p className="flex gap-1.5">
                 {" "}
                 <span className="text-red-600 text-2xl">
@@ -80,7 +80,7 @@ const SkillDetails = () => {
                 </span>
               </p>
             </div>
-            <div className="p-1.5 bg-[#FAF0F0] border border-gray-300 shadow-sm max-w-[180px] rounded-[10px] ">
+            <div className="p-1.5 m-2 bg-[#FAF0F0] border border-gray-300 shadow-sm max-w-[180px] rounded-[10px] ">
               <p className="flex gap-1.5">
                 {" "}
                 <span className="text-red-600 text-2xl">

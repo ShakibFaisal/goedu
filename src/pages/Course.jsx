@@ -55,7 +55,7 @@ const Course = () => {
           <option value="desc">Price: High to Low</option>
         </select>
       </div>
-      <div className="mx-auto grid grid-cols-1 gap-5 md:grid-cols-4">
+      <div className=" mx-auto grid grid-cols-1 justify-items-center gap-5 md:grid-cols-4">
         {sortedData.map((skill, index) => (
           <SkillCard key={index} skill={skill}></SkillCard>
         ))}
